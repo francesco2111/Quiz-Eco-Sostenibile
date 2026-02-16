@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "question": "Quale percentuale della plastica mondiale viene effettivamente riciclata?",
+      "options": ["Solo il 9%", "Circa il 30%", "Circa il 50%", "Oltre il 70%"],
+      "correct": 0,
+      "explanation": "Solo il 9% della plastica viene riciclata globalmente. La maggior parte finisce nelle discariche o negli oceani."
+    },
+    {
+      "question": "Quanta CO2 produce in media un'auto a benzina per ogni km percorso?",
+      "options": ["50 grammi", "120 grammi", "200 grammi", "350 grammi"],
+      "correct": 1,
+      "explanation": "Un'auto a benzina emette circa 120g di CO2 per km. Le auto elettriche riducono drasticamente questo valore."
+    },
+    {
+      "question": "Quale di queste attività consuma più acqua?",
+      "options": ["Fare una doccia di 10 minuti", "Lavare i piatti a mano", "Produrre 1 kg di carne bovina", "Far funzionare la lavatrice"],
+      "correct": 2,
+      "explanation": "Servono circa 15.000 litri d'acqua per produrre 1 kg di carne bovina, considerando l'irrigazione dei mangimi."
+    },
+    {
+      "question": "Quanto tempo impiega una bottiglia di plastica a decomporsi in natura?",
+      "options": ["10-20 anni", "50-80 anni", "100-200 anni", "450-1000 anni"],
+      "correct": 3,
+      "explanation": "Una bottiglia di plastica può impiegare fino a 1000 anni per decomporsi completamente."
+    },
+    {
+      "question": "Qual è la fonte di energia rinnovabile più diffusa al mondo?",
+      "options": ["Eolico", "Solare", "Idroelettrico", "Geotermico"],
+      "correct": 2,
+      "explanation": "L'energia idroelettrica rappresenta circa il 16% della produzione globale di elettricità."
+    },
+    {
+      "question": "Quanta energia si risparmia riciclando una lattina di alluminio?",
+      "options": ["15%", "35%", "65%", "95%"],
+      "correct": 3,
+      "explanation": "Riciclare l'alluminio risparmia il 95% dell'energia necessaria per produrlo da zero."
+    },
+    {
+      "question": "Quale settore produce più emissioni di gas serra a livello globale?",
+      "options": ["Trasporti", "Produzione energia", "Agricoltura e allevamento", "Industria manifatturiera"],
+      "correct": 1,
+      "explanation": "La produzione di energia elettrica e calore rappresenta circa il 25% delle emissioni globali."
+    },
+    {
+      "question": "Quanti alberi servono per assorbire la CO2 prodotta da un'auto in un anno?",
+      "options": ["2-3 alberi", "10-15 alberi", "30-50 alberi", "100+ alberi"],
+      "correct": 2,
+      "explanation": "Servono circa 30-50 alberi maturi per compensare le emissioni annuali di un'auto media."
+    },
+    {
+      "question": "Quale di questi materiali è più difficile da riciclare?",
+      "options": ["Vetro", "Carta", "Plastica mista", "Alluminio"],
+      "correct": 2,
+      "explanation": "La plastica mista è difficile da riciclare perché contiene diversi tipi di polimeri che vanno separati."
+    },
+    {
+      "question": "Di quanto è aumentata la temperatura media globale dal periodo preindustriale?",
+      "options": ["0.5°C", "1.1°C", "2.3°C", "3.5°C"],
+      "correct": 1,
+      "explanation": "La temperatura media globale è aumentata di circa 1.1°C, con conseguenze già visibili sul clima."
+    }
+  ]
+}

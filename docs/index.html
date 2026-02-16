@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Eco-Sostenibile</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS (relativo a docs/) -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="quiz-container">
+
+    <!-- Schermata Introduzione -->
+    <div id="intro-screen">
+      <div class="card">
+        <div class="card-header text-center">
+          <h1>🌍 Quiz Eco-Sostenibile</h1>
+          <p>Testa le tue conoscenze sulla sostenibilità ambientale</p>
+        </div>
+
+        <div class="card-body text-center">
+          <div class="intro-icon">🌱</div>
+          <h3 class="mb-4">Quanto ne sai di sostenibilità?</h3>
+          <p class="lead mb-4">Rispondi a 10 domande sul tema ambientale e scopri il tuo punteggio green!</p>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">10</div>
+              <div class="stat-label">Domande</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100</div>
+              <div class="stat-label">Punti Max</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">⏱️</div>
+              <div class="stat-label">Senza Limite</div>
+            </div>
+          </div>
+
+          <button class="btn btn-eco btn-lg mt-4" onclick="startQuiz()">Inizia il Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schermata Quiz -->
+    <div id="quiz-screen" class="hidden">
+      <div class="card">
+        <div class="card-header">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2 class="mb-0">Quiz Eco-Sostenibile</h2>
+            <span class="badge bg-light text-dark fs-6">
+              Punteggio: <span id="current-score">0</span>/100
+            </span>
+          </div>
+
+          <div class="progress">
+            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%">0%</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="question-number" id="question-number">Domanda 1 di 10</div>
+          <div class="question-text" id="question-text"></div>
+          <div id="options-container"></div>
+
+          <button id="next-btn" class="btn btn-eco mt-4 hidden" onclick="nextQuestion()">
+            Prossima Domanda →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schermata Risultati -->
+    <div id="results-screen" class="hidden">
+      <div class="card">
+        <div class="card-header text-center">
+          <h1>🎉 Quiz Completato!</h1>
+          <p>Ecco il tuo punteggio green</p>
+        </div>
+
+        <div class="card-body text-center">
+          <div class="score-display" id="final-score">0/100</div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="correct-answers">0</div>
+              <div class="stat-label">Risposte Corrette</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="incorrect-answers">0</div>
+              <div class="stat-label">Risposte Sbagliate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="accuracy">0%</div>
+              <div class="stat-label">Precisione</div>
+            </div>
+          </div>
+
+          <div id="feedback-message" class="feedback"></div>
+
+          <div class="eco-tips">
+            <h4>💡 Suggerimenti per Ridurre il Tuo Impatto</h4>
+            <ul class="text-start">
+              <li>Riduci il consumo di plastica monouso</li>
+              <li>Usa i mezzi pubblici o bicicletta quando possibile</li>
+              <li>Risparmia energia spegnendo dispositivi non in uso</li>
+              <li>Preferisci prodotti locali e di stagione</li>
+              <li>Differenzia correttamente i rifiuti</li>
+            </ul>
+          </div>
+
+          <div class="leaderboard">
+            <div id="leaderboard-container"></div>
+          </div>
+
+          <button class="btn btn-eco btn-lg mt-4" onclick="restartQuiz()">🔄 Ricomincia il Quiz</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS (relativo a docs/) -->
+  <script src="./js/quiz.js" defer></script>
+
+  <!-- Debug minimale: se resta bianco, qui vediamo subito cosa manca -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const ids = ['intro-screen','quiz-screen','results-screen','question-text','options-container'];
+      const missing = ids.filter(id => !document.getElementById(id));
+      if (missing.length) console.error('❌ Mancano elementi HTML:', missing);
+      else console.log('✅ HTML OK: elementi trovati');
+    });
+  </script>
+</body>
+</html>
